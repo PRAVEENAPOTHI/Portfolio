@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    display: flex; /* Use flexbox to make body a flex container */
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; /* Ensure body fills the viewport height */
+}
+
+.nav-bar {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.nav-bar a {
+    padding: 20px 20px 20px 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none; /* Remove underlines from links */
+}
+
+.nav-bar a.active {
+    font-weight: bold;
+}
+
+.nav-bar a:hover {
+    background-color: rgb(255, 221, 0);
+    color: black;
+    border-radius:50px;
+    border-style:groove;
+}
+
+.footer {
+    background-color: black;
+    color: rgb(223, 223, 223);
+    text-align: center;
+    padding: 10px;
+}
+
+.container2 {
+    background-color: yellow;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.container2 .content {
+    padding: 20px;
+    max-width: 800px;
+    text-align: center;
+}
+
+.imagepic .ima {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 50px;
+    height: auto;
+    border: 7px solid rgb(0, 0, 0);
+    border-radius: 15px 50px 30px 5px;
+}
+
+.container2 .texttext {
+    color: rgb(0, 0, 0);
+    margin-top: 5px;
+    font-size: medium;
+    text-align: center;
+}
+
+.aboutsec {
+    color: rgb(0, 0, 0);
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.para {
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 20px;
+    /* border: 2px solid rgb(0, 0, 0); */
+    text-align: center;
+}
+
+.container2 .pro-img .frontend .pic1 {
+    width: 100%;
+    max-width: 500px;
+    border: 5px solid black;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.icons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .container2 {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .container2 .texttext {
+        margin-top: 48px;
+        margin-left: 50px;
+        text-align: left;
+    }
+
+    .aboutsec {
+        margin-left: 100px;
+        text-align: left;
+    }
+
+    .para {
+        margin-left: 100px;
+        text-align: left;
+    }
+
+    h3 {
+        margin-left: 100px;
+        text-align: left;
+    }
+
+    .icons {
+        margin-left: 50px;
+        margin-top:-480px;
+        text-align: left;
+        font-size:27px;;
+
+       
+    }
+}
