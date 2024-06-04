@@ -1,5 +1,5 @@
 function showResume(){
-    window.open('28 resume.pdf')
+    window.open('Praveena.pdf')
 }
 
 function showHome(){
